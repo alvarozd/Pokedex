@@ -1,0 +1,8 @@
+<h1>DIGITA EL NOMBRE DEL POKEMON</h1>
+<input [(ngModel)]="name" >
+<button (click)="buscar()">Buscar</button>
+<img src="{{urlimg}}" width="200" alt="">
+
+<h1 *ngFor="let tipo of tipos"> {{tipo.type.name}}</h1>
+<h1>habilidades</h1>
+<h2 *ngFor="let habilidad of habilidades"> {{habilidad.move.name}}</h2>
